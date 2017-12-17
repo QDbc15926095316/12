@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="fonts/iconfont.css">
+	<script src="js/common.js"></script>
+	<script src="js/iscroll.js"></script>
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+		}
+		html, body {
+			width: 100%;
+			height: 100%;
+		}
+		.layout {
+			width: 100%;
+			height: 100%;
+		}
+		.header {
+			width: 100%;
+			position: relative;
+		}
+		.bg_03 {
+			width: 100%;
+			display: block;
+		}
+		.gqt_03 {
+			width: 30px;
+			position: absolute;
+			display: block;
+			top: 25px;
+			left: 50%;
+			transform: translateX(-50%);
+		}
+		.music1_03 {
+			width: 30px;
+			position: absolute;
+			top: 25px;
+			right: 25px;
+		}
+		/*搜索开始*/
+		.box {
+			/*width: 100%;*/
+			height: 50px;
+			background-color: #d40e05;
+			padding: 0 80px;
+			position: relative;
+		}
+		.search {
+			float: left;
+			line-height: 50px;
+			font-size: 18px;
+			color: #fff;
+			margin-left: 20px;
+		}
+		.message {
+			float: right;
+			line-height: 50px;
+			font-size: 18px;
+			color: #fff;
+			margin-right: 20px;
+		}
+		.icon-sousuo {
+			position: absolute;
+			top: 14px;
+			left: 80px;
+			font-size: 20px;
+			color: #fff;
+		}
+		.icon-xiaoxi {
+			position: absolute;
+			top: 18px;
+			right: 80px;
+			font-size: 16px;
+			color: #fff;
+		}
+		.movies {
+			width: 100%;
+			height: 50px;
+			background-color: #e6e6e6;
+		}
+		.movie1,
+		.movie2  {
+			float: left;
+			text-decoration: none;
+			width: 50%;
+			height: 50px;
+			line-height: 50px;
+			text-align: center;
+			font-size: 16px;
+			color: #333333;
+		}
+		.active {
+			border-bottom: 3px solid red;
+			box-sizing: border-box;
+		}
+		.product1 {
+			width: 100%;
+			overflow: hidden;
+		}
+		.ul1 {
+			width: 100%;
+			
+			list-style: none;
+		}
+		.ul1 li {
+			padding: 5px;
+			width: 32%;
+			float: left;
+			margin-top: 8px;
+			border: 1px solid #ea4941;
+			box-sizing: border-box;
+		}
+		.ul1 li:nth-child(3n-1) {
+			margin-left: 5px;
+			margin-right: 5px;
+		}
+		
+		.ul1 li img {
+			width: 100%;
+		}
+		.songs {
+			text-align: center;
+			color: #333333;
+			margin-top: 10px;
+			font-weight: 700;
+			font-size: 14px;
+		}
+		.college {
+			color: #333;
+			margin-top: 10px;
+			font-size: 14px;
+			white-space: nowrap;
+			overflow: hidden;
+			text-overflow: ellipsis;
+
+		}
+		.name {
+			margin-top: 10px;
+			color: #333;
+			font-size: 14px;
+		}
+		.vote{
+			display: block;
+			width: 100%;
+			height: 30px;
+			line-height: 30px;
+			background-color: #c52921;
+			text-decoration: none;
+			font-size: 14px;
+			text-align: center;
+			border-radius: 5px;
+			color: #fff;
+			margin-top: 5px;
+		}
+		.aa {
+			display: none;
+		}
+		.clearfix::before,
+		.clearfix::after{
+			content: "";
+			display: block;
+			height: 0;
+			line-height: 0px;
+			clear: both;
+			visibility: hidden;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="layout">
+		<!-- 头部开始 -->
+		<div class="header">
+			<img src="images/bg_03.png" alt="" class="bg_03">
+			<img src="images/gqt_03.png" alt="" class="gqt_03">
+			<img src="images/music_03.png" alt="" class="music1_03">
+			<!-- <audio src="images/spring.mp3" autoplay="autoplay"></audio> -->
+		</div>
+
+		<!-- 搜索开始 -->
+		<div class="box">
+			<i class="icon-sousuo iconfont"></i>
+			<p class="search">搜索</p>
+			<p class="message">留言</p>
+			<i class="icon-xiaoxi iconfont"></i>
+		</div>
+		<div class="movies">
+			<a href="#" class="movie1 active">微电影成片</a>
+			<a href="#" class="movie2">微电影剧本</a>
+		</div>
+
+		<div class="product1 dd" style="position: relative;">
+			<ul class="ul1 clearfix ">
+				<li>
+					<a href="#"><img src="images/stu_06.png" alt=""></a>
+					<h4 class="songs">后会无期</h4>
+					<p class="college">恩施职业技术学院</p>
+					<p class="name">冯志虎</p>
+					<a href="#" class="vote">投票(39360)</a>
+				</li>
+				<li>
+					<a href="#"><img src="images/stu_06.png" alt=""></a>
+					<h4 class="songs">后会无期</h4>
+					<p class="college">恩施职业技术学院</p>
+					<p class="name">冯志虎</p>
+					<a href="#" class="vote">投票(39360)</a>
+				</li>
+				<li>
+					<a href="#"><img src="images/stu_06.png" alt=""></a>
+					<h4 class="songs">后会无期</h4>
+					<p class="college">恩施职业技术学院</p>
+					<p class="name">冯志虎</p>
+					<a href="#" class="vote">投票(39360)</a>
+				</li>
+				<li>
+					<a href="#"><img src="images/stu_06.png" alt=""></a>
+					<h4 class="songs">后会无期</h4>
+					<p class="college">恩施职业技术学院</p>
+					<p class="name">冯志虎</p>
+					<a href="#" class="vote">投票(39360)</a>
+				</li>
+				<li>
+					<a href="#"><img src="images/stu_06.png" alt=""></a>
+					<h4 class="songs">后会无期</h4>
+					<p class="college">恩施职业技术学院</p>
+					<p class="name">冯志虎</p>
+					<a href="#" class="vote">投票(39360)</a>
+				</li>
+				<li>
+					<a href="#"><img src="images/stu_06.png" alt=""></a>
+					<h4 class="songs">后会无期</h4>
+					<p class="college">恩施职业技术学院</p>
+					<p class="name">冯志虎</p>
+					<a href="#" class="vote">投票(39360)</a>
+				</li>
+				<li>
+					<a href="#"><img src="images/stu_06.png" alt=""></a>
+					<h4 class="songs">后会无期</h4>
+					<p class="college">恩施职业技术学院</p>
+					<p class="name">冯志虎</p>
+					<a href="#" class="vote">投票(39360)</a>
+				</li>
+				<li>
+					<a href="#"><img src="images/stu_06.png" alt=""></a>
+					<h4 class="songs">后会无期</h4>
+					<p class="college">恩施职业技术学院</p>
+					<p class="name">冯志虎</p>
+					<a href="#" class="vote">投票(39360)</a>
+				</li>
+				<li>
+					<a href="#"><img src="images/stu_06.png" alt=""></a>
+					<h4 class="songs">后会无期</h4>
+					<p class="college">恩施职业技术学院</p>
+					<p class="name">冯志虎</p>
+					<a href="#" class="vote">投票(39360)</a>
+				</li>
+				
+			</ul>
+		</div>
+
+
+		<div class="product1 cc" style="position: relative;">
+			<ul class="ul1  clearfix">
+				<li>
+					<a href="#"><img src="images/stu_06.png" alt=""></a>
+					<h4 class="songs">后会无期</h4>
+					<p class="college">黑马程序员</p>
+					<p class="name">冯志虎</p>
+					<a href="#" class="vote">投票(39360)</a>
+				</li>
+				<li>
+					<a href="#"><img src="images/stu_06.png" alt=""></a>
+					<h4 class="songs">后会无期</h4>
+					<p class="college">黑马程序员</p>
+					<p class="name">冯志虎</p>
+					<a href="#" class="vote">投票(39360)</a>
+				</li>
+				<li>
+					<a href="#"><img src="images/stu_06.png" alt=""></a>
+					<h4 class="songs">后会无期</h4>
+					<p class="college">黑马程序员</p>
+					<p class="name">冯志虎</p>
+					<a href="#" class="vote">投票(39360)</a>
+				</li>
+				<li>
+					<a href="#"><img src="images/stu_06.png" alt=""></a>
+					<h4 class="songs">后会无期</h4>
+					<p class="college">黑马程序员</p>
+					<p class="name">冯志虎</p>
+					<a href="#" class="vote">投票(39360)</a>
+				</li>
+				<li>
+					<a href="#"><img src="images/stu_06.png" alt=""></a>
+					<h4 class="songs">后会无期</h4>
+					<p class="college">黑马程序员</p>
+					<p class="name">冯志虎</p>
+					<a href="#" class="vote">投票(39360)</a>
+				</li>
+				<li>
+					<a href="#"><img src="images/stu_06.png" alt=""></a>
+					<h4 class="songs">后会无期</h4>
+					<p class="college">黑马程序员</p>
+					<p class="name">冯志虎</p>
+					<a href="#" class="vote">投票(39360)</a>
+				</li>
+				<li>
+					<a href="#"><img src="images/stu_06.png" alt=""></a>
+					<h4 class="songs">后会无期</h4>
+					<p class="college">黑马程序员</p>
+					<p class="name">冯志虎</p>
+					<a href="#" class="vote">投票(39360)</a>
+				</li>
+				<li>
+					<a href="#"><img src="images/stu_06.png" alt=""></a>
+					<h4 class="songs">后会无期</h4>
+					<p class="college">黑马程序员</p>
+					<p class="name">冯志虎</p>
+					<a href="#" class="vote">投票(39360)</a>
+				</li>
+				<li>
+					<a href="#"><img src="images/stu_06.png" alt=""></a>
+					<h4 class="songs">后会无期</h4>
+					<p class="college">黑马程序员</p>
+					<p class="name">冯志虎</p>
+					<a href="#" class="vote">投票(39360)</a>
+				</li>
+				
+			</ul>
+		</div>
+
+	</div>
+
+	<script>
+	// 获取屏幕的高度
+	var layout = document.querySelector(".layout");
+	var layoutHeight = layout.offsetHeight;
+	// 获取大图片的高度
+	var bg_03 = document.querySelector(".bg_03");
+	var bg_03Height = bg_03.offsetHeight;
+	// 获取box的高度
+	var box = document.querySelector(".box");
+	var boxHeight = box.offsetHeight;
+	// 获取movies的高度
+	var movies = document.querySelector(".movies");
+	var moviesHeight = movies.offsetHeight;
+	// 获取最下面的宽度
+	var dd = document.querySelector(".dd");
+	var cc = document.querySelector(".cc");
+	var x = layoutHeight - bg_03Height - boxHeight - moviesHeight;
+	dd.style.height = x + "px";
+	cc.style.height = x + "px";
+	// 重新获取
+	window.onresize = function() {
+
+		bg_03Height = bg_03.offsetHeight;
+		layoutHeight = layout.offsetHeight;
+		x = layoutHeight - bg_03Height - boxHeight - moviesHeight;
+		dd.style.height = x + "px";
+		cc.style.height = x + "px";
+
+	}
+	// 绑定移动端的tap事件
+	var movies = document.querySelector(".movies");
+	var as = movies.querySelectorAll("a");
+	// 为每一个a元素添加索引值
+	for(var i = 0; i < as.length; i++) {
+		as[i].index = i;
+	}
+	var dd = document.querySelector(".dd");
+	var cc = document.querySelector(".cc");
+
+	var arr = [];
+	arr.push(dd,cc);
+
+	itcast.tap(movies,function(e) {
+		for(var i = 0; i < as.length; i++) {
+			as[i].classList.remove("active");
+			arr[i].style.display = "none"
+		}
+		var xx = e.target;
+		xx.classList.add("active");
+
+		var index  = xx.index;
+		arr[index].style.display = "block";
+
+		
+		
+	})
+
+
+
+
+	var myScroll = new IScroll('.dd', {
+		mouseWheel: true,
+		scrollbars: true
+	});
+	var myScroll = new IScroll('.cc', {
+		mouseWheel: true,
+		scrollbars: true
+	});
+
+
+
+	
+
+
+
+
+	</script>
+</body>
+</html>
